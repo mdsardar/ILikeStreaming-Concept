@@ -1,0 +1,15 @@
+
+public class Main {	
+	public static void main(String[] args) {
+		exploreLambda();
+	}	
+	
+	public static void exploreLambda(){
+		List<String> lamLst = Arrays.asList("01","02","03","01","110");
+		List<String> lamLst2  = lamLst.stream().distinct().collect(Collectors.toList());
+		List<String> lamLst3  = lamLst2.stream().filter(name-> name.startsWith("10")).collect(Collectors.toList());
+				//.collect(Collectors.toList());
+		lamLst3.stream().forEach(System.out::println);
+	}
+	
+}
