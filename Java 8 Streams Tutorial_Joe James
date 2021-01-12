@@ -9,9 +9,7 @@ import java.util.stream.Stream;
 public class JavaStreams {
 	public static void main(String... args) throws IOException {
 		//IntStream.range(1, 15).skip(5).forEach(s -> System.out.println(s));
-		/*System.out.println(
-		IntStream.range(1, 5).sum()		
-				);*/
+		/*System.out.println(IntStream.range(1, 5).sum());*/
 		//Stream.of("Alfred","Altaf","Aarav").sorted().findFirst().ifPresent(System.out::print);;
 		String[] names = {"Anu", "Chanu", "Banu", "Sardar", "Chandri"};
 		
